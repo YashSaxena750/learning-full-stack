@@ -1,0 +1,43 @@
+.flag{
+
+
+    margin-top: 15%;
+    width: 900px;
+    height: 600px;
+    margin-left: 25%;
+}
+
+div.first_strip {
+    position: relative;
+    background-color: rgb(254, 151, 64);
+    width: 100%;
+    height: 300px; /* Adjust the height to make the second strip visible */
+}
+
+div.second_strip {
+    background-color: white;
+    width: 100%;
+    height: 145px;
+    position: absolute; /* Position it absolutely within the first_strip */
+    bottom: 0; /* Position it at the bottom of the first_strip */
+}
+
+div.third_strip {
+    background-color: rgb(27, 135, 31);
+    width: 100%;
+    height: 150px;
+    position: relative; /* Position it relative to its parent (second_strip) */
+}
+
+img{
+
+
+    width: 12%;
+    height: 108px;
+    margin-top: 25px; 
+    margin-left: 405px;
+}
+
+
+
+
