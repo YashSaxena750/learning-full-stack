@@ -107,3 +107,26 @@ div input{
     position: relative;
     top:50px
 }
+
+.adname input[name="state"]{
+
+    font-size: 1.5rem;
+    padding: 0.4rem 0px;
+    text-indent: 0.5rem;
+    border: none;
+    outline: 1px solid #999;
+    border-radius: 7px;
+    width: 25%;
+    color: #999;
+    margin-left: 10px;
+    position: relative;
+    top:-22px;
+    left:750px;
+}
+
+#cname{
+    padding:10px;
+    position: relative;
+    top: 48px;
+
+}
