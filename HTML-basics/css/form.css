@@ -58,6 +58,9 @@ div input{
 }
 /* css for customer name ends here */
 
+
+/* css for address section here */
+
 .adname input[name="fst"]{
 
     font-size: 1.5rem;
@@ -119,14 +122,74 @@ div input{
     width: 25%;
     color: #999;
     margin-left: 10px;
-    position: relative;
-    top:-22px;
+    position: absolute;
+    top:430px;
     left:750px;
+}
+
+.adname input[name="szip"]{
+
+    font-size: 1.5rem;
+    padding: 0.4rem 0px;
+    text-indent: 0.5rem;
+    border: none;
+    outline: 1px solid #999;
+    border-radius: 7px;
+    width: 25%;
+    color: #999;
+    margin-left: 10px;
+    position: absolute;
+    top:520px;
+    left:0px;
+}
+
+.adname select[id="drop"]{
+
+    font-size: 1.5rem;
+    padding: 0.4rem 0px;
+    text-indent: 0.5rem;
+    border: none;
+    outline: 1px solid #999;
+    border-radius: 7px;
+    width: 25%;
+    color: #999;
+    margin-left: 10px;
+    position: relative;
+    top:150px;
+    left:0px;
 }
 
 #cname{
     padding:10px;
     position: relative;
     top: 48px;
+
+}
+
+#sname{
+    padding:10px;
+    position: absolute;
+    left: 755px;
+    top: 470px;
+
+}
+
+#szip{
+
+    padding:10px;
+    position: absolute;
+    left: 0px;
+    top: 560px;
+
+
+}
+
+#cont{
+
+    padding:10px;
+    position: relative;
+    left: 0px;
+    top: 145px;
+
 
 }
