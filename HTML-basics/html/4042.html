@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>404 Error</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-image: url('https://c.wallhere.com/photos/fa/b6/starry_night_Alice_in_Wonderland_digital_art_stars_Moon_trees_simple_background_minimalism-2233298.jpg!d');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    #rocket {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      animation: rocketAnim 5s linear 1 forwards, rocketVanish 2s linear 5s forwards;
+    }
+
+    @keyframes rocketAnim {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100vh);
+      }
+    }
+
+    @keyframes rocketVanish {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes blackHole {
+      0% {
+        display: block;
+        transform: scale(1);
+      }
+      100% {
+        display: block;
+        transform: scale(10);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="rocket">
+    <img src="../assets/images/rocket1-PhotoRoom.png-PhotoRoom.png" alt="Rocket">
+  </div>
+  <h1 id="lost-in-space">Lost in Space</h1>
+</div>
+</body>
+</html>

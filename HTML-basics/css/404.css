@@ -1,0 +1,145 @@
+.main-div{
+
+    margin-left: 25%;
+}
+
+/* CSS for the first circle */
+h1 {
+    text-align: center;
+}
+
+.fcircle {
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1; /* Initially show the circle */
+    transition: opacity 1s ease-in-out; /* Add a transition effect on opacity */
+}
+
+.fcircle.hiding {
+    opacity: 0; /* Hide the circle when the 'hiding' class is applied */
+    transition: opacity 1s ease-in-out;
+}
+
+.fcircle h3 {
+    position: relative;
+    top: 80px;
+    left: 35px;
+    color: white;
+}
+
+.scircle {
+    margin-top: -220px;
+    margin-left: 450px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1; /* Initially show the circle */
+    transition: opacity 2s ease-in-out; /* Add a transition effect on opacity */
+}
+
+.scircle.hiding {
+    opacity: 0; /* Hide the circle when the 'hiding' class is applied */
+    transition: opacity 2s ease-in-out;
+}
+
+.scircle h3 {
+    position: relative;
+    top: 80px;
+    left: 39px;
+    color: white;
+}
+
+.tcircle {
+    margin-top: -220px;
+    margin-left: 850px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1; /* Initially show the circle */
+    transition: opacity 3s ease-in-out; /* Add a transition effect on opacity */
+}
+
+.tcircle.hiding {
+    opacity: 0; /* Hide the circle when the 'hiding' class is applied */
+    transition: opacity 3s ease-in-out;
+}
+
+.tcircle h3 {
+    position: relative;
+    top: 80px;
+    left: 39px;
+    color: white;
+}
+
+/* CSS for the tick animation */
+.tick {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    opacity: 0; /* Initially hide the tick */
+    animation: tickAnimation 1s ease-in-out 2s forwards; /* Start the animation after a 2s delay */
+}
+
+.tick::before {
+    content: "\2713"; /* Unicode checkmark character */
+    font-size: 60px;
+    color: #00cc00;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+@keyframes tickAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* CSS for the cross animation */
+.cross {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    opacity: 0; /* Initially hide the cross */
+    animation: crossAnimation 1s ease-in-out 2s forwards; /* Start the animation after a 2s delay */
+}
+
+.cross::before {
+    content: "\2717"; /* Unicode cross character */
+    font-size: 60px;
+    color: #cc0000; /* Red color for the cross */
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+@keyframes crossAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
