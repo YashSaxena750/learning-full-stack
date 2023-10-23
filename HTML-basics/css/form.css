@@ -59,7 +59,7 @@ div input{
 /* css for customer name ends here */
 
 
-/* css for address section here */
+/* css for address section starts here */
 
 .adname input[name="fst"]{
 
@@ -192,4 +192,23 @@ div input{
     top: 145px;
 
 
+}
+/* css for address section ends here */
+
+
+
+.cntct input[id="phid"]{
+
+    font-size: 1.5rem;
+    padding: 0.4rem 0px;
+    text-indent: 0.5rem;
+    border: none;
+    outline: 1px solid #999;
+    border-radius: 7px;
+    width: 25%;
+    color: #999;
+    margin-left: 10px;
+    position: absolute;
+    top:680px;
+    left:0px;
 }
