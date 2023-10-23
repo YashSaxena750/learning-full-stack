@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="../css/404.css">
+</head>
+<body>
+
+    <h1>Error: Page Not Found</h1>
+
+    <div class="main-div">
+        <div class="fcircle">
+
+            <h3>Request to Server</h3>
+            <div class="tick"></div>
+
+        </div>
+
+        <div class="scircle">
+
+            <h3>Searching.......</h3>
+            <div class="tick"></div>
+
+        </div>
+
+        <div class="tcircle">
+
+            <h3>page not found</h3>
+            <div class="cross"></div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<script>
+    // Add the "show-circle" class with a delay
+    setTimeout(function() {
+        document.querySelector('.fcircle').classList.add('show-circle');
+    }, 2000); // Adjust the delay time in milliseconds (2000ms = 2 seconds)
+
+    function showTick() {
+        const tickElement = document.querySelector('.tick');
+        tickElement.classList.add('show-tick');
+    }
+
+</script>
+
+</html>
