@@ -2,213 +2,99 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: white;
     background-color: black;
-  }
+}
 
+.container {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 0px 2rem;
+    border: 1px solid;
+}
 
-#sf{
+.main-heading {
+    font-size: 4rem;
+    margin: 2rem 0rem 1rem;
+    color: white;
     text-align: center;
-    padding: 10px;
 }
 
-hr{
-    border-style: bold;
-    border-width: 1px;
-    border-color:black;
+/* form section */
+.form-class {
+    margin: 2rem 0px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-field {
+    margin: 1rem 0px 0.6rem;
+}
+
+.field-head {
+    font-size: 2rem;
+}
+
+.input-div {
+    margin-bottom: 1rem;
+}
+
+.field-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.form-control-input {
+    font-size: 1.5rem;
+    padding: 0.4rem 0px;
+    text-indent: 0.5rem;
+    border: none;
+    outline: 1px solid #999;
+    border-radius: 7px;
     width: 100%;
-
-}
-
-/* css for customer name starts here */
-
-div h1{
-    padding: 10px;
-
-}
-
-div input{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 35%;
     color: #999;
-    margin-left: 10px;
-
 }
-
-#fname{
-    position: absolute;
-    padding: 10px;
-}
-
-#lname{
-
-    padding: 10px;
-    position: absolute;
-    left: 37%;
-}
-/* css for customer name ends here */
-
-
-/* css for address section starts here */
-
-.adname input[name="fst"]{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 70%;
+option {
     color: #999;
-    margin-left: 10px;
+}
+.radio {
+    outline: none;
 }
 
-.adname input[name="sst"]{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 70%;
-    color: #999;
-    margin-left: 10px;
-    position: relative;
-    top:40px
+.form-control-input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
-.adname h6#lname{
-
-    position: relative;
-    top: 36px;
-    left: 0px;
+.help-text {
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+    padding: 0.1rem;
 }
 
-.adname input[name="city"]{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 25%;
-    color: #999;
-    margin-left: 10px;
-    position: relative;
-    top:50px
+button {
+    font-size: 2rem;
+    margin: 0px auto;
+    display: block;
+    color: wite;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid white;
+    background-color: #023de3;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px #0000;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 
-.adname input[name="state"]{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 25%;
-    color: #999;
-    margin-left: 10px;
-    position: absolute;
-    top:430px;
-    left:750px;
-}
-
-.adname input[name="szip"]{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 25%;
-    color: #999;
-    margin-left: 10px;
-    position: absolute;
-    top:520px;
-    left:0px;
-}
-
-.adname select[id="drop"]{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 25%;
-    color: #999;
-    margin-left: 10px;
-    position: relative;
-    top:150px;
-    left:0px;
-}
-
-#cname{
-    padding:10px;
-    position: relative;
-    top: 48px;
-
-}
-
-#sname{
-    padding:10px;
-    position: absolute;
-    left: 755px;
-    top: 470px;
-
-}
-
-#szip{
-
-    padding:10px;
-    position: absolute;
-    left: 0px;
-    top: 560px;
-
-
-}
-
-#cont{
-
-    padding:10px;
-    position: relative;
-    left: 0px;
-    top: 145px;
-
-
-}
-/* css for address section ends here */
-
-
-
-.cntct input[id="phid"]{
-
-    font-size: 1.5rem;
-    padding: 0.4rem 0px;
-    text-indent: 0.5rem;
-    border: none;
-    outline: 1px solid #999;
-    border-radius: 7px;
-    width: 25%;
-    color: #999;
-    margin-left: 10px;
-    position: absolute;
-    top:680px;
-    left:0px;
-}
+/* form section ends */
